@@ -32,28 +32,41 @@ $("#click").on("click", function () {
 database.ref().on("child_added", function (snapshot) {
     // storing the snapshot.val() in a variable for convenience
     var addTrain = snapshot.val();
-
     var tFrequency = addTrain.Train_Frequency; //Frequency of Stops
     var firstTime = addTrain.Train_First_Time; //First Run of the Day
-
     var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years"); // Convert First run to Hours:Minutes
-
     var diffTime = moment().diff(moment(firstTimeConverted), "minutes"); // Calculate the difference between Hours:Minutes of current time and first time
-   
     var tRemainder = diffTime % tFrequency; // Modulus the difference in time (NOW) and frequency of the train to get the remaining time difference
     var tMinutesTillTrain = tFrequency - tRemainder; //Frequency minus the remaining minutes give the time till train arrive
-   
     var nextTrain = moment().add(tMinutesTillTrain, "minutes").format('HH:mm'); //add the min is away from to the current time toget the final time train will arrive
 
-    $('tbody').append(`
-    <tr id="${addTrain.serverAdd}">
-    <td>${addTrain.Train_Name}</td>
-    <td>${addTrain.Train_Destination}</td>
-    <td>Every ${addTrain.Train_Frequency} Minutes</td>
-    <td>${nextTrain}</td>
-    <td>${tMinutesTillTrain}</td>
-    </tr>`)
+    update(snapshot, addTrain, tFrequency, firstTime, firstTimeConverted, diffTime, tRemainder, tMinutesTillTrain, nextTrain, Train_Name)
 
 }, function (errorObject) {
     console.log("Errors handled: " + errorObject.code);
 });
+
+function update(snapshot, addTrain, tFrequency, firstTime, firstTimeConverted, diffTime, tRemainder, tMinutesTillTrain, nextTrain) {
+
+    $('tbody').empty()
+    $('tbody').append(`
+            <tr id="column">
+            <td>${addTrain.Train_Name}</td>
+            <td>${addTrain.Train_Destination}</td>
+            <td>Every ${addTrain.Train_Frequency} Minutes</td>
+            <td>${nextTrain}</td>
+            <td>${tMinutesTillTrain}</td>
+            </tr>`)
+};
+
+update()
+
+setInterval(function () {
+    if (moment().get('second') % 10 == 0) {
+        update()
+    }
+    else {
+        console.log(moment().get('seconds'))
+    }
+
+}, 1000);
