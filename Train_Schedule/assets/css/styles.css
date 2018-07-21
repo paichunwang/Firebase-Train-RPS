@@ -1,11 +1,43 @@
-/* ----------------------- Formatting CSS ----------------------- */
-
-/* presets */
-div{
+div.row{
     border: 1px;
+    border-color: aqua;
     border-style: solid;
-    border-color: aquamarine;
-    height: 100vh;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table {
+    table-layout:fixed;
+    width: 100%;
+}
+
+th{
+    font-weight: bold;
+}
+
+tr{
+    border-bottom: 1px solid lightgray;
+}
+
+form div, input[type="text"]{
+    margin: 3px 0px;
+    font-weight: bold;
+}
+
+input{
+    width: 300px;
+}
+
+div.head{
+    height: 100px;
+}
+
+div.schedule{
+    height: 300px;
+}
+
+div.input{
+    height: 100%;
 }
 
 body{
@@ -13,30 +45,6 @@ body{
     background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center bottom;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
 }
-
-input[type=text]{ /* Input field */
-    width: 298px;
-    height: 50px;
-    padding: 10px;
-}
-
-input[type=submit]{ /* Submit Button */
-    width: 100px;
-    height: 50px;
-}
-
-/* class */
-.centerThis /* Center any element with the class NOTE: WILL CHANGE ELEMENT TO FLEX:DISPLAY*/
-{
-  margin: auto;
-  display: flex;
-    align-items: center;
- height: 100%;
-  width: 400px;
-}
-
-/* id */
-
-
-/* Functional CSS */

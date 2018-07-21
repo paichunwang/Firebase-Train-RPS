@@ -3,33 +3,72 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Welcome to What's for ...</title>
+    <title>Train Schedule</title>
 
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="./assets/javascript/javascript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
 </head>
 
 <body>
-    <!-- <div style="position: fixed; top: -100px; left: -300px; z-index: -99; width: 140%; height: 140%">
-        <iframe frameborder="0" height="100%" width="100%" src="https://youtube.com/embed/ZbofJucjkSU?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1">
-        </iframe>
-    </div> -->
     <div class="container">
         <div class="row">
-            <div class="col-m-12 centerThis">
-                <input type="text" value="What are you looking for..." onblur="this.placeholder = 'What are you looking for...'">
-                <input type="submit" value="Search">
+            <div class="col-m-12 head">
+                <h1>Head Banner</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-m-12 schedule">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Current Train Schedule</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trainList">
+                        <tr>
+                            <td>Train Name</td>
+                            <td>Destination</td>
+                            <td>Frequency (MM)</td>
+                            <td>Next Arrival</td>
+                            <td>Minutes Away</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-m-12 input">
+                <tbody>
+                    <tr>
+                        <td>
+                            <form>
+                                <div>Train Name</div>
+                                <input type="text" id="trainName"></input>
+                                <div>Destination</div>
+                                <input type="text" id="trainDest"></input>
+                                <div>First Train Time (HH:MM) Military Time</div>
+                                <input type="text" id="trainTime"></input>
+                                <div>Frequency (Min)</div>
+                                <input type="text" id="trainFreq"></input>
+                                <button id="click">Submit</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript" src="./assets/javascript/javascriptTrain.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 </html>
