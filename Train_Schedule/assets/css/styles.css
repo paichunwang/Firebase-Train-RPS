@@ -1,0 +1,42 @@
+/* ----------------------- Formatting CSS ----------------------- */
+
+/* presets */
+div{
+    border: 1px;
+    border-style: solid;
+    border-color: aquamarine;
+    height: 100vh;
+}
+
+body{
+    background-image: url("../images/background.jpg");
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center bottom;
+}
+
+input[type=text]{ /* Input field */
+    width: 298px;
+    height: 50px;
+    padding: 10px;
+}
+
+input[type=submit]{ /* Submit Button */
+    width: 100px;
+    height: 50px;
+}
+
+/* class */
+.centerThis /* Center any element with the class NOTE: WILL CHANGE ELEMENT TO FLEX:DISPLAY*/
+{
+  margin: auto;
+  display: flex;
+    align-items: center;
+ height: 100%;
+  width: 400px;
+}
+
+/* id */
+
+
+/* Functional CSS */
