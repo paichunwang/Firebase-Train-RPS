@@ -1,3 +1,5 @@
+//* REPLACE BELOW ONLY **********************************
+
 var config = {
     apiKey: "AIzaSyBWR20EyufE7JpEnysVcrqc7iPMl194HVw",
     authDomain: "trainschedule-4a867.firebaseapp.com",
@@ -8,7 +10,11 @@ var config = {
 };
 firebase.initializeApp(config);
 
+//* REPLACE ABOVE ONLY **********************************
+
 var database = firebase.database();
+
+$("h1").html(`<a href="${config.databaseURL}">Link to your database</a>`)
 
 $("#click").on("click", function () {
     event.preventDefault();
@@ -40,7 +46,7 @@ database.ref().on("child_added", function (snapshot) {
     var tMinutesTillTrain = tFrequency - tRemainder; //Frequency minus the remaining minutes give the time till train arrive
     var nextTrain = moment().add(tMinutesTillTrain, "minutes").format('HH:mm'); //add the min is away from to the current time toget the final time train will arrive
 
-    $('tbody').empty()
+    // $('tbody').empty()
     $('tbody').append(`
             <tr id="column">
             <td>${addTrain.Train_Name}</td>

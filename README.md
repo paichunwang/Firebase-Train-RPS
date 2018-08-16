@@ -2,7 +2,10 @@
 
 This JavaScript based file-folder is used to demonstrate the familiarity of utilizing JQuery and Firebase in a client-server connection environment.
 
-This Repository contains (2) Example usage of Jquary and Firebase. The download below will contain both files.
+This Repository contains (2) Example usage of jQuery and Firebase. The download below will contain both files.
+
+RPS_Game: A rock-paper-scissor game using Firebase as part of the environment.
+Train_Schedule: A listing form that utilizes Firebase as a recall for external data storage. 
 
 ## Getting Started
 
@@ -24,15 +27,11 @@ Requirement #2: [Firebase Google Account](https://firebase.google.com/); Free as
 
 ### Installing
 
-Once cloned or downloaded using your preferred method in 'Getting Started', open the 'index.html' file with your editor of choice.
-
-Replace the following code with your Firebase key...
-
-![Firebase Key Replacement](http://url/to/img.png)
+Once cloned or downloaded using your preferred method in 'Getting Started', please follow the ReadMe.md files in the specific folder you wish to run, RPS_Game or Train_Schedule
 
 ## Testing Phase
 
-No test exist yet for this work. Have suggestion? Let me know!
+No test exist yet for this this Phase, please refer to the specific folder Readme.md for instruction.
 
 ## Deployment
 
@@ -43,6 +42,7 @@ Upload all files in the download to a external web hosting / repository / local 
 * [HTML](https://www.w3.org/standards/webdesign/htmlcss) - the language for describing the structure of Web page.
 * [Bootstrap MAXCDN 3.3.7](http://blog.getbootstrap.com/2016/07/25/bootstrap-3-3-7-released/) - version of bootstrap used to dynamically format HTML webpages.
 * [VSCode](https://code.visualstudio.com/) - free code editor that is used to redefine and optimize for the building and debugging modern web and cloud applications.
+* [Firebase](https://firebase.google.com/) - a free online application that includes functionality like analytics, databases, messaging and crash reporting for simulated database.
 
 ## Contributing
 
