@@ -39,17 +39,22 @@ Replace the following code with your Firebase key...
 To test this functionality,
 1. open the index.html on your preferred browser.
 2. Enter the following information: Train Name, Train Destination, First Arrival Time(military time format), and  Frequency(minute format).
-![Picture Example]()
+![Picture Example](https://github.com/paichunwang/Firebase-Train-RPS/blob/master/Train_Schedule/Example-Information-Train-Schedule-Enter)
+4. Information will update base on connection to Firebase Database.
 
 ## Deployment
 
-Upload all files in the download to a external web hosting / repository / local machine for access.
+1. Upload all files in the download to a external web hosting / repository / local machine for access.
+2. Change the firebase key in 'Firebase-Train-RPS\Train_Schedule\assets\javascript\javascriptTrain.js'
+3. Click on the link provided in the index.html banner section for firebase database access.
+4. Enter information to update for train schedule.
 
 ## Built With
 
 * [HTML](https://www.w3.org/standards/webdesign/htmlcss) - the language for describing the structure of Web page.
 * [Bootstrap MAXCDN 3.3.7](http://blog.getbootstrap.com/2016/07/25/bootstrap-3-3-7-released/) - version of bootstrap used to dynamically format HTML webpages.
 * [VSCode](https://code.visualstudio.com/) - free code editor that is used to redefine and optimize for the building and debugging modern web and cloud applications.
+* [Google Firebase](https://firebase.google.com/)
 
 ## Contributing
 
