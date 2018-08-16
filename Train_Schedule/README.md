@@ -39,7 +39,7 @@ Replace the following code with your Firebase key...
 To test this functionality,
 1. open the index.html on your preferred browser.
 2. Enter the following information: Train Name, Train Destination, First Arrival Time(military time format), and  Frequency(minute format).
-![Picture Example](https://github.com/paichunwang/Firebase-Train-RPS/blob/master/Train_Schedule/Example-Information-Train-Schedule-Enter)
+![Picture Example](https://github.com/paichunwang/Firebase-Train-RPS/blob/master/Train_Schedule/Example-Information-Train-Schedule-Enter.png)
 4. Information will update base on connection to Firebase Database.
 
 ## Deployment
