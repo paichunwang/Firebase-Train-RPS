@@ -54,7 +54,7 @@ To test this functionality,
 * [HTML](https://www.w3.org/standards/webdesign/htmlcss) - the language for describing the structure of Web page.
 * [Bootstrap MAXCDN 3.3.7](http://blog.getbootstrap.com/2016/07/25/bootstrap-3-3-7-released/) - version of bootstrap used to dynamically format HTML webpages.
 * [VSCode](https://code.visualstudio.com/) - free code editor that is used to redefine and optimize for the building and debugging modern web and cloud applications.
-* [Google Firebase](https://firebase.google.com/)
+* [Firebase](https://firebase.google.com/) - a free online application that includes functionality like analytics, databases, messaging and crash reporting for simulated database.
 
 ## Contributing
 
