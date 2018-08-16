@@ -2,6 +2,8 @@
 
 This JavaScript based file-folder is used to demonstrate the familiarity of utilizing JQuery and Firebase in a client-server connection environment.
 
+This Repository contains (2) Example usage of Jquary and Firebase. The download below will contain both files.
+
 ## Getting Started
 
 Download the repository using your preferred method:
@@ -22,7 +24,11 @@ Requirement #2: [Firebase Google Account](https://firebase.google.com/); Free as
 
 ### Installing
 
-Once cloned or downloaded using your preferred method in 'Getting Started', open the 'index.html' file.
+Once cloned or downloaded using your preferred method in 'Getting Started', open the 'index.html' file with your editor of choice.
+
+Replace the following code with your Firebase key...
+
+![Firebase Key Replacement](http://url/to/img.png)
 
 ## Testing Phase
 
@@ -44,7 +50,7 @@ This webpage with build under the aid and instruction of affiliated instructors 
 
 ## Authors
 
-* **Patrick Wang** - [Bootstrap-Portfolio](https://github.com/paichunwang/Bootstrap-Portfolio)
+* **Patrick Wang** - [Firebase-Train-RPS](https://github.com/paichunwang/Firebase-Train-RPS)
 
 ## License
 
