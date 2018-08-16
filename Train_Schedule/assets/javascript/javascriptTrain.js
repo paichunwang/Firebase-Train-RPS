@@ -40,14 +40,6 @@ database.ref().on("child_added", function (snapshot) {
     var tMinutesTillTrain = tFrequency - tRemainder; //Frequency minus the remaining minutes give the time till train arrive
     var nextTrain = moment().add(tMinutesTillTrain, "minutes").format('HH:mm'); //add the min is away from to the current time toget the final time train will arrive
 
-    update(snapshot, addTrain, tFrequency, firstTime, firstTimeConverted, diffTime, tRemainder, tMinutesTillTrain, nextTrain, Train_Name)
-
-}, function (errorObject) {
-    console.log("Errors handled: " + errorObject.code);
-});
-
-function update(snapshot, addTrain, tFrequency, firstTime, firstTimeConverted, diffTime, tRemainder, tMinutesTillTrain, nextTrain) {
-
     $('tbody').empty()
     $('tbody').append(`
             <tr id="column">
@@ -57,9 +49,11 @@ function update(snapshot, addTrain, tFrequency, firstTime, firstTimeConverted, d
             <td>${nextTrain}</td>
             <td>${tMinutesTillTrain}</td>
             </tr>`)
-};
 
-update()
+}, function (errorObject) {
+    console.log("Errors handled: " + errorObject.code);
+});
+
 
 setInterval(function () {
     if (moment().get('second') % 10 == 0) {
