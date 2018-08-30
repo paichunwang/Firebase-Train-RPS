@@ -1,12 +1,12 @@
-//* REPLACE BELOW ONLY **********************************
+//* REPLACE WITH YOUR OWN FIREBASE DATABASE CODE BELOW ONLY **********************************
 
 var config = {
-    apiKey: "AIzaSyBWR20EyufE7JpEnysVcrqc7iPMl194HVw",
-    authDomain: "trainschedule-4a867.firebaseapp.com",
-    databaseURL: "https://trainschedule-4a867.firebaseio.com",
-    projectId: "trainschedule-4a867",
-    storageBucket: "trainschedule-4a867.appspot.com",
-    messagingSenderId: "681428300794"
+    apiKey: "REPLACE WITH YOUR OWN FIREBASE DATABASE CODE",
+    authDomain: "REPLACE WITH YOUR OWN FIREBASE DATABASE CODE",
+    databaseURL: "REPLACE WITH YOUR OWN FIREBASE DATABASE CODE",
+    projectId: "REPLACE WITH YOUR OWN FIREBASE DATABASE CODE",
+    storageBucket: "REPLACE WITH YOUR OWN FIREBASE DATABASE CODE",
+    messagingSenderId: "REPLACE WITH YOUR OWN FIREBASE DATABASE CODE"
 };
 firebase.initializeApp(config);
 
